@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+.header {
+    margin-bottom: 50px;
+}
+
+.header .main-img{
+    position: relative;
+    top: 0;
+    display: block;
+    width: 100%;
+    max-height: 900px;
+    z-index: -1;
+}
+
+.logo {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    width: 90px;
+    z-index: 10;
+    margin-top: 1px;
+}
+
+.header .headerText {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.header h1{
+    color: transparent;
+    background: #fff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    font-size: 5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+.header h2{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header .headerText button {
+    width: 200px;
+    padding: 18px;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: rgba(0,212,255,1);
+    transition: background .7s;
+    font-size: 1.05em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.75);
+}
+
+.header .headerText button:hover {
+    color: rgba(0,212,255,1);
+    background-color:#fff;
+    cursor:pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 10;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.nav-colored {
+    background-color: rgba(0,200,255,.9);
+    transition: background .6s ease-in;
+}
+
+.nav-transparent {
+    background-color: none;
+    transition: background .6s ease-out;
+}
+
+.navbar div {
+    padding: 20px 40px 10px 40px;
+    font-family: 'Raleway', sans-serif;
+    transition: border-bottom .5s ease-in;
+    border: 1px solid transparent;
+}
+
+.navbar div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar div:nth-child(1) {border-bottom: 1px #fff solid;}
+.navbar div:nth-child(6) {margin-right: 10%;}
+
+.navbar div:hover { 
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.section div {
+    padding: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    border-radius: 10px; 
+    width: 25%;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background .5s ease-in-out;
+}
+
+.section p {
+    padding: 10px;
+}
+
+.section img {
+    width:20%;
+}
+
+#section_header {
+    text-align: center;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+.section div:hover {
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.section-grey {
+    display: block;
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 100px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.testamonials {
+    display: flex;
+}
+
+.testamonials p {
+    padding: 3%;
+    margin: 2%;
+    width: 25%;
+    font-family: 'Arial', sans-serif;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+}
+
+footer {
+    display: flex;
+    background-color: rgba(0,200,255,1);
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer div {
+    position: absolute;
+    right: 0;
+}
+
+footer div a {
+    padding: 10px;    
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    margin-right: 30px;
+}
+
+footer div a:hover {
+    text-decoration: underline;
+}
