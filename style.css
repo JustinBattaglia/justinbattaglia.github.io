@@ -47,9 +47,11 @@ Blueish Grey: #A8BFBF
 
 .header {
     display: block;
-    background-color: #127375;
-    height: 500px;
-    width: 100%;
+    background-image: url(images/header2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sites {
