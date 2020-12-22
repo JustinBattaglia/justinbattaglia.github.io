@@ -74,7 +74,7 @@ body {
 
 .header {
     display: block;
-    background-image: url(images/header.jpg);
+    background-image: url(images/header1.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,6 +96,7 @@ body {
 
 .section1 .circles{
     position: relative;
+    /*top: -80px; for large screen*/
     display: block;
     z-index: 1;
     background-image: url(images/circles.png);
