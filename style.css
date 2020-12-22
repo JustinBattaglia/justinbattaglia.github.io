@@ -14,7 +14,16 @@ Blueish Grey: #A8BFBF
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
 .wrapper {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -65,7 +74,7 @@ Blueish Grey: #A8BFBF
 
 .header {
     display: block;
-    background-image: url(images/header2.jpg);
+    background-image: url(images/header.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +83,8 @@ Blueish Grey: #A8BFBF
 
 .header-content {
     position: absolute;
-    top: 25%;
+    z-index: 2;
+    top: 15%;
     left: 10%;
     font-size: 2em;
     width: 30%;
@@ -83,6 +93,23 @@ Blueish Grey: #A8BFBF
     padding: 20px;
     border-bottom: #D5F2F2 solid 2px;
 }
+
+.section1 .circles{
+    position: relative;
+    display: block;
+    z-index: 1;
+    background-image: url(images/circles.png);
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1 {
+    margin-top: -80px;
+    margin-right: -200px; 
+}
+
 
 .sites {
     
