@@ -8,6 +8,16 @@ Blueish Grey: #A8BFBF
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+@media only screen and (max-width: 900px) {
+    .header {
+        width: 1000px;
+    }
+    
+    .section1 {
+        width: 1000px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -87,7 +97,7 @@ body {
     top: 15%;
     left: 10%;
     font-size: 2em;
-    width: 30%;
+    width: 400px;
     color: #D5F2F2;
     background-color: rgba(18, 115, 117, .8);
     padding: 20px;
