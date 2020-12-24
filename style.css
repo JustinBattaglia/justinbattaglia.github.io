@@ -124,10 +124,11 @@ body {
 
 
 .quote {
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 34vw;
-    font-size: 1.2em;
+    font-size: 1.5em;
     width: 500px;
+    color: #657373;
 }
 
 .sites {
