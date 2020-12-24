@@ -132,8 +132,6 @@ body {
 }
 
 .section2 {
-    padding: 20px;
-    text-align: center;
     color: #657373;
     background-color: #D5F2F2;
     height: 1000px;
@@ -141,7 +139,9 @@ body {
 }
 
 .section2 h1 {
-    font-size: 3em;     
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;   
 }
 
 #slant {
@@ -153,6 +153,49 @@ body {
 	-ms-transform: rotate(10deg); 
     -webkit-transform: rotate(10deg); 
     transform: rotate(2deg);
+}
+
+.section2-options {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.section2-options .option1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.section2-options .option1 .text {    
+    width: 50%;
+    padding: 20px;
+}
+
+.section2-options .option1 .text p {
+    text-align: justify-all;
+    font-size: 1.4em;
+}
+
+.section2-options .option1 .text h2 {
+    font-size: 1.7em;
+}
+
+.section2-options .option1 .text button {
+    padding: 15px;
+    color: #D5F2F2;
+    background-color: #127375;
+    margin-top: 10px;
+    border-radius: 3px;
+    border:none;
+    font-size: 1em;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+.section2-options .option1 .text button:hover {
+    cursor: pointer;
+    opacity: .7;
 }
 
 .sites {
