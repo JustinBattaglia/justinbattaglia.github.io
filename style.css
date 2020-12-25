@@ -145,7 +145,7 @@ body {
     margin-bottom: 170px;
 }
 
-.slant {
+#slant {
     margin-left: -200px;
     margin-top: -60px;
     background-color: #D5F2F2;
@@ -163,7 +163,9 @@ body {
     margin-top: 30px;
 }
 
-.section2-options .option1 {
+/***************************   OPTIONS  ****************************/
+
+.section2-options .option1, .section2-options .option3 {
     display: flex;
     flex-direction: row; 
     justify-content: center;
@@ -174,7 +176,12 @@ body {
     flex-direction: row-reverse; 
     background-color: #fff;
     justify-content: center;
+    padding-bottom: 200px;
 }
+
+.section2-options .option3  {
+}
+
 
 #slant-white {
     margin-left: -200px;
@@ -187,24 +194,24 @@ body {
     transform: rotate(-1.5deg);
 }
 
-.section2-options .option1 .text, .section2-options .option2 .text {    
+.section2-options .option1 .text, .section2-options .option2 .text, .section2-options .option3 .text {    
     width: 50%;
     padding: 20px;
     align-self: center;
 }
 
-.section2-options .option1 .text p, .section2-options .option2 .text p {
+.section2-options .option1 .text p, .section2-options .option2 .text p, .section2-options .option3 .text p {
     text-align: justify-all;
     font-size: 1.4em;
     min-width: 200px;
 
 }
 
-.section2-options .option1 .text h2, .section2-options .option2 .text h2 {
+.section2-options .option1 .text h2, .section2-options .option2 .text h2, .section2-options .option3 .text h2 {
     font-size: 1.7em;
 }
 
-.section2-options .option1 .text button, .section2-options .option2 .text button {
+.section2-options .option1 .text button, .section2-options .option2 .text button, .section2-options .option3 .text button {
     padding: 15px;
     color: #D5F2F2;
     background-color: #127375;
@@ -215,7 +222,7 @@ body {
     transition-property: opacity;
     transition-duration: .5s;
 }
-.section2-options .option1 .text button:hover, .section2-options .option2 .text button:hover {
+.section2-options .option1 .text button:hover, .section2-options .option2 .text button:hover, .section2-options .option3 .text button:hover {
     cursor: pointer;
     opacity: .7;
 }
@@ -226,6 +233,17 @@ body {
 
 .section2-options .option2 img {
     padding-right: 75px;
+}
+
+#slant-lightblue {
+    margin-left: -200px;
+    margin-top: -40px;
+    background-color: #D5F2F2;
+    height: 100px;
+    width: 2000px;
+	-ms-transform: rotate(2deg); 
+    -webkit-transform: rotate(2deg); 
+    transform: rotate(2deg);
 }
 
 .sites {
