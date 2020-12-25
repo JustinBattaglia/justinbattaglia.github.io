@@ -134,68 +134,98 @@ body {
 .section2 {
     color: #657373;
     background-color: #D5F2F2;
-    height: 1000px;
-    margin-top: -100px;
+    height: auto;
+    margin-top: -60px;
 }
 
 .section2 h1 {
     text-align: center;
     padding: 20px;
-    font-size: 3em;   
+    font-size: 3em;  
+    margin-bottom: 170px;
 }
 
-#slant {
+.slant {
     margin-left: -200px;
     margin-top: -60px;
     background-color: #D5F2F2;
     height: 100px;
     width: 2000px;
-	-ms-transform: rotate(10deg); 
-    -webkit-transform: rotate(10deg); 
+	-ms-transform: rotate(2deg); 
+    -webkit-transform: rotate(2deg); 
     transform: rotate(2deg);
 }
 
 .section2-options {
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     margin-top: 30px;
-    
 }
 
 .section2-options .option1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    justify-content: center;
 }
 
-.section2-options .option1 .text {    
+.section2-options .option2  {
+    display: flex;
+    flex-direction: row-reverse; 
+    background-color: #fff;
+    justify-content: center;
+}
+
+#slant-white {
+    margin-left: -200px;
+    margin-bottom: -50px;
+    background-color: #fff;
+    height: 200px;
+    width: 2000px;
+	-ms-transform: rotate(-1.5deg); 
+    -webkit-transform: rotate(-1.5deg); 
+    transform: rotate(-1.5deg);
+}
+
+.section2-options .option1 .text, .section2-options .option2 .text {    
     width: 50%;
     padding: 20px;
+    align-self: center;
 }
 
-.section2-options .option1 .text p {
+.section2-options .option1 .text p, .section2-options .option2 .text p {
     text-align: justify-all;
     font-size: 1.4em;
+    min-width: 200px;
+
 }
 
-.section2-options .option1 .text h2 {
+.section2-options .option1 .text h2, .section2-options .option2 .text h2 {
     font-size: 1.7em;
 }
 
-.section2-options .option1 .text button {
+.section2-options .option1 .text button, .section2-options .option2 .text button {
     padding: 15px;
     color: #D5F2F2;
     background-color: #127375;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 3px;
     border:none;
-    font-size: 1em;
+    font-size: 1.1em;
     transition-property: opacity;
     transition-duration: .5s;
 }
-.section2-options .option1 .text button:hover {
+.section2-options .option1 .text button:hover, .section2-options .option2 .text button:hover {
     cursor: pointer;
     opacity: .7;
+}
+
+.section2-options .option1 img {
+    padding-left: 40px;
+}
+
+.section2-options .option2 img {
+    padding-right: 75px;
 }
 
 .sites {
