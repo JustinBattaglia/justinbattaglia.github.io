@@ -329,22 +329,42 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #127385;
 }
-input[type=submit]:focus {
-    border: #000 solid 2px;
-}
 
 label {
+    color: #657373;
     margin-top: 15px;
 }
 
+.form-header {
+    margin: 0 auto;
+    display: flex;
+}
+.form-header h2 {
+    margin-top: 150px;
+    font-size: 2em;
+    color: #127375;
+    position: relative;
+}
+.form-header div {
+    align-self: center;
+}
+
 .form-container {
-    width: 30%;
+    width: 500px;
     padding: 20px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 50px;
     font-size: 1.4em;
 }
 
+.main-form-container {
+    background-image: url();
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1000px;
+}
 
 .sites {
     
