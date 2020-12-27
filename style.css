@@ -336,7 +336,7 @@ label {
 }
 
 .form-header {
-    margin: 0 auto;
+    margin-left: 200px;
     display: flex;
 }
 .form-header h2 {
@@ -352,15 +352,15 @@ label {
 .form-container {
     width: 500px;
     padding: 20px;
-    margin: 0 auto;
+    margin-left: 200px;
     margin-top: 50px;
     font-size: 1.4em;
 }
 
 .main-form-container {
-    background-image: url();
+    background-image: url(images/city3.jpg);
     height: 100vh;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 1000px;
