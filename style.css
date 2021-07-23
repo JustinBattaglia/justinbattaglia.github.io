@@ -52,7 +52,7 @@ html {
     box-shadow: none;
     border: none;
     color: white;
-    background-color: rgb(49, 139, 157);
+    background-color: #318b9d;
     transition: background .7s;
     font-size: 1.05em;
     font-family: 'Raleway', sans-serif;
@@ -98,23 +98,24 @@ html {
     width: 100%;
     margin-top: -100px;
     background-color: #f7f7f7;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .section1-main {
+    position: relative;
     margin: 0 auto;
     width: 80%;
-    height: 500px;
     background-color: #fff;
     box-shadow: 0px 0px 80px -1px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0px 0px 80px -1px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 0px 80px -1px rgba(0,0,0,0.4);
     display: flex;
     flex-direction: row;
+    z-index: 10;
 }
 
 .section1-main img {
     width: 30%;
-    border-right: 20px solid rgb(49, 139, 157); 
+    border-right: 20px solid #ff8652; 
 }
 
 .section1-main div {
@@ -127,4 +128,18 @@ html {
     width: 80%;
     margin: 0 auto;
     margin-top: 100px;
+    text-align: justify;
+}
+
+#about-me-header-text {
+    margin-bottom: -150px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #c3c3c3;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+    font-size: 5.5em;
+    text-align: center;
 }
