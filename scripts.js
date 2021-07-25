@@ -1,3 +1,4 @@
+
 //var navbar = document.querySelector('nav').style.backgroundColor = "#00d4ff";
 
 var navbar = document.querySelector('nav');
@@ -42,3 +43,30 @@ $('a[href*="#"]')
       }
     }
   });
+
+var $elem = $('.html');
+var $elem2 = $('.css');
+var $elem3 = $('.php');
+var $elem4 = $('.javascript');
+var $elem5 = $('.wordpress');
+var in_view = new Waypoint.Inview({
+    element: $elem5[0],
+    element: $elem4[0],
+    element: $elem3[0],
+    element: $elem2[0],
+    element: $elem[0],
+    enter: function() {
+        $elem.addClass('start-html');
+        $elem2.addClass('start-css');
+        $elem3.addClass('start-php');
+        $elem4.addClass('start-javascript');
+        $elem5.addClass('start-wordpress');
+    },
+    exit: function() {
+        $elem.removeClass('start-html');
+        $elem2.removeClass('start-css');
+        $elem3.removeClass('start-php');
+        $elem4.removeClass('start-javascript');
+        $elem5.removeClass('start-wordpress');
+    }
+});

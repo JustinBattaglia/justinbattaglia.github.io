@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>Graphic Complex | Home</title>
     <link rel="stylesheet" href="style.css">
-    <script  src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jQueryWaypoint/lib/jquery.waypoints.min.js"></script>
+    <script src="jQueryWaypoint/lib/shortcuts/inview.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
     <body>
         <div class="wrapper">
             <div class="header">
                 <div class="headerText">
-=                   <h1>Hi,<br/>I'm Justin Battaglia</h1><br/>
+                   <h1>Hi,<br/>I'm Justin Battaglia</h1><br/>
                     <h2>A front-end <span style="border-bottom: 1px solid rgb(54, 158, 180);">web devloper</span>, who wants to make your passion<br><span style="border-bottom: 1px solid rgb(54, 158, 180);">possible.</span></h2>
                     <br/><br/><br/>
                     <button type="button" >Talk to me!</button>
@@ -28,19 +31,61 @@
                 
             </div> 
             <div class="section1">
-              <div style="border-bottom: 2px solid #318b9d; width: 75%; position: relative;top:500px; transform: rotate(45deg);z-index: 1;"></div>
-              <div style="border-bottom: 2px solid #318b9d; width: 80%; position: relative;top:300px; right: 0px;transform: rotate(-20deg);z-index: 1;"></div>
-              <h1 id="about-me-header-text">About Me</h1>
-              <img style="position: relative;top:85px;left: 73%; z-index: 11;" src="images/circle.png" alt="">
-              <img style="position: relative;top:650px;left: 25%;width: 20%; z-index: 11;" src="images/circle.png" alt="">
-               <div class="section1-main">
+                <div style="border-bottom: 2px solid #318b9d; width: 75%; position: relative;top:500px; transform: rotate(45deg);z-index: 1;"></div>
+                <div style="border-bottom: 2px solid #318b9d; width: 80%; position: relative;top:300px; right: 0px;transform: rotate(-20deg);z-index: 1;"></div>
+                <h1 id="about-me-header-text">About Me</h1>
+                <img style="position: relative;top:85px;left: 73%; z-index: 11;" src="images/circle.png" alt="">
+                <img style="position: relative;top:650px;left: 25%;width: 20%; z-index: 11;" src="images/circle.png" alt="">
+                <div class="section1-main">
                    <img src="images/profileC.jpg" alt="">
                    <div>
-                       <h3 style="line-height: 30px;">As you probably saw before my name is Justin Battaglia. I am a 20-year-old Web Developer who loves to use my creativity combined with a modern and clean touch. I have had experience in HTML, CSS, JavaScript, Python, Java, C++, PHP, and Assembly. What I'm saying is I know code. I have also worked on the Wordpress, Wix, and Shopify platforms. All in all, whether you need a company site, a personal blog, an online store, or really anything, shoot me an email and we can figure out your next steps. I am here to help you accompligh your goals which you are working so hard for. </h3>
+                       <h3 style="line-height: 30px;">As you probably saw before my name is Justin Battaglia. I am a 20-year-old Web Developer who loves to use my creativity combined with a modern and clean touch. I have had experience in HTML, CSS, JavaScript, Python, Java, C++, PHP, and Assembly. What I'm saying is I know code. I have also worked on the Wordpress, Wix, and Shopify platforms. All in all, whether you need a company site, a personal blog, an online store, or really anything, shoot me an email and we can figure out your next steps. I am here to help you accomplish the goals that you are working so hard for. </h3>
                    </div>
-               </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div id="slant"></div>
+                <h1 id="skills-header-text">&#x276E;/ <span id="skills-header-text2">My Skills</span> &#x276F;</h1>
+                <div class="skills-table">
+                    <div class="skills-table-titles">
+                        <h3>Beginner</h3>
+                        <h3>Intermidiate</h3>
+                        <h3>Advanced</h3>
+                        <h3>Expert</h3>
+                    </div>
+                    <div class="skills-table-language">
+                        <div>
+                            <h3 style="padding-top: 0px;">&nbsp;</h3>
+                        </div>
+                        <div>
+                            <h3>HTML5</h3>
+                            <div class="html" style="margin-left: 60px; background-color: #ff8652; width: 70%; height: 30px;"></div>
+                        </div>
+                        <div>
+                            <h3>PHP</h3>
+                            <div class="php" style="margin-left: 100px; background-color: #c3c3c3; width: 40%; height: 30px;"></div>
+                        </div>
+                        <div>
+                            <h3>CSS3</h3>
+                            <div class="css" style="margin-left: 85px; background-color: #318b9d; width: 63%; height: 30px;"></div>
+                        </div>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <div class="javascript" style="margin-left: 10px; background-color: #c3c3c3; width: 50%; height: 30px;"></div>
+                        </div>
+                        <div>
+                            <h3>Wordpress</h3>
+                            <div class="wordpress" style="margin-left: 0px; background-color: #ff8652; width: 73%; height: 30px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div id="slant2"></div>
+                <h1 id="work-header-text">My Work <span id="work-header-text2">:)</span></h1>
+                <img src="images/abstractShapes1.PNG" alt="">
             </div>
         </div>  
-        <script onload="" type="text/javascript" src="scripts.js"></script>
     </body>
+    <script onload="" type="text/javascript" src="scripts.js"></script>
 </html>
