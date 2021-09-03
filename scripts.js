@@ -70,3 +70,49 @@ var in_view = new Waypoint.Inview({
         $elem5.removeClass('start-wordpress');
     }
 });
+
+// SLIDESHOW
+var arrowF = document.getElementById('arrowf');
+
+var slide0 = document.getElementById('slide0');
+var slide1 = document.getElementById('slide1');
+var slide2 = document.getElementById('slide2');
+const maxSlide = 3;
+let slideArray = [slide0,slide1,slide2];
+
+slide0.style.display = "block";
+slide1.style.display = "none";
+slide2.style.display = "none";
+
+let i = 1;
+
+function movef() {
+    slide0.style.display = "none";
+    slide1.style.display = "none";
+    slide2.style.display = "none";
+    slideArray[i].style.display = "block";
+    i = i+1;
+    console.log(i);
+    if (i === maxSlide) {
+        i = 0;
+    }
+    
+}    
+
+function moveb() {
+    slide0.style.display = "none";
+    slide1.style.display = "none";
+    slide2.style.display = "none";
+    slideArray[i].style.display = "block";
+    i = i-1;
+    console.log(i);
+    if (i === 0) {
+        i = (maxSlide-1);
+    }
+    
+} 
+
+
+//for (let i = 0; i < maxSlide; i++) {
+//    console.log(slideArray[i]);
+//}

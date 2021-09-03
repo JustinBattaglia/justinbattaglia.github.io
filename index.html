@@ -10,6 +10,7 @@
     <script src="jQueryWaypoint/lib/shortcuts/inview.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/49fa1886b2.js" crossorigin="anonymous"></script>
 </head>
     <body>
         <div class="wrapper">
@@ -90,25 +91,36 @@
                     <div></div>
                 </div>
                 <div class="portfolio">
-                    <a href="https://www.tryazon.com" target="_blank">
+                    <div class="arrowb" >
+                        <button onclick="moveb()" id="arrowb">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                    <a id="slide0" href="https://www.tryazon.com" target="_blank">
                         <div class="tint">
                             <h2>Tryazon</h2>
                             <img src="images/exampleTryazon.PNG" alt="">
                         </div>
                     </a>
-                    <a href="https://raptor-bait-company.myshopify.com/" target="_blank">
+                    <a id="slide1" href="https://raptor-bait-company.myshopify.com/" target="_blank">
                         <div class="tint">
                             <h2>Raptor Bait Co.</h2>
                             <img src="images/exampleRaptor.PNG" alt="">
                         </div>
                     </a>
-                    <a href="codingSite/index.html" target="_blank">
+                    <a id="slide2" href="codingSite/index.html" target="_blank">
                         <div class="tint">
                             <h2>Coding Camp</h2>
                             <img src="images/exampleCodingSite.PNG" alt="">
                         </div>
                     </a>
+                    <div class="arrow" >
+                        <button onclick="movef()" id="arrowf">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
+                <div class="footer"><h2>justinbattagliapro@gmail.com</br>Justin Battaglia</h2></div>
             </div>
         </div>
     </body>

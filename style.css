@@ -334,11 +334,68 @@ a {
 .portfolio {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("images/epicBG.png");
-    background-repeat: repeat;
-    background-position: center top;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(#f7f7f7, #318b9d, #ff8652);
+    padding-bottom: 100px;
+}
+
+.portfolio a {
+    width: 800px;
+}
+
+.portfolio .arrow {
+    align-self: center;
+}
+
+div.arrow:hover > #arrowf{
+    cursor: pointer;
+    color: #318b9d;
+    background-color: rgba(255,255,255,.5);
+}
+
+#arrowf {
+    width: 100px;
+    height: 100px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 4em;
+    margin-left: 35px;
+    color: #fff;
+    border: 3px #fff solid;
+    border-radius: 100px;
+    padding-left: 9px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.portfolio .arrowb {
+    align-self: center;
+}
+
+div.arrowb:hover > #arrowb{
+    cursor: pointer;
+    color: #318b9d;
+    background-color: rgba(255,255,255,.5);
+}
+
+#arrowb {
+    width: 100px;
+    height: 100px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 4em;
+    color: #fff;
+    border: 3px #fff solid;
+    border-radius: 100px;
+    margin-right: 35px;
+    padding-right: 9px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .portfolio h2{
@@ -481,7 +538,7 @@ h2:hover .tint:before{
 
 .lines-row div:nth-child(1) {
     border-bottom: #318b9d 5px solid;
-    justify-content: flex-start;
+    align-self: flex-start;
 }
 .lines-row div:nth-child(2) {
     border-bottom: #ff8652 3px solid;
@@ -490,4 +547,20 @@ h2:hover .tint:before{
 .lines-row div:nth-child(3) {
     border-bottom: #c3c3c3 2px solid;
     align-self: flex-end;
+}
+
+.footer {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ff8652;
+    padding: 100px;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    box-shadow: 0px -13px 12px 0px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px -13px 12px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px -13px 12px 0px rgba(0,0,0,0.16);
 }
