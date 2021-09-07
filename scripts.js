@@ -106,7 +106,7 @@ function moveb() {
     slideArray[i].style.display = "block";
     i = i-1;
     console.log(i);
-    if (i === 0) {
+    if (i === -1) {
         i = (maxSlide-1);
     }
     
