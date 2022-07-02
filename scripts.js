@@ -61,13 +61,6 @@ var in_view = new Waypoint.Inview({
         $elem3.addClass('start-php');
         $elem4.addClass('start-javascript');
         $elem5.addClass('start-wordpress');
-    },
-    exit: function() {
-        $elem.removeClass('start-html');
-        $elem2.removeClass('start-css');
-        $elem3.removeClass('start-php');
-        $elem4.removeClass('start-javascript');
-        $elem5.removeClass('start-wordpress');
     }
 });
 
@@ -84,16 +77,17 @@ slide0.style.display = "block";
 slide1.style.display = "none";
 slide2.style.display = "none";
 
-let i = 1;
+var i = 1;
 
 function movef() {
     slide0.style.display = "none";
     slide1.style.display = "none";
     slide2.style.display = "none";
     slideArray[i].style.display = "block";
-    i = i+1;
     console.log(i);
-    if (i === maxSlide) {
+    if (i != maxSlide-1) {
+        i = i+1;
+    } else {
         i = 0;
     }
     
@@ -104,10 +98,10 @@ function moveb() {
     slide1.style.display = "none";
     slide2.style.display = "none";
     slideArray[i].style.display = "block";
-    i = i-1;
-    console.log(i);
-    if (i === -1) {
-        i = (maxSlide-1);
+    if (i != 0) {
+        i -= 1;
+    } else {
+        i = 2
     }
     
 } 
