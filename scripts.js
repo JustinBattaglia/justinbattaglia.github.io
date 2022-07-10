@@ -107,6 +107,20 @@ function moveb() {
 } 
 
 
+function moveHam() {
+    var ham = document.getElementsByClassName("hamburger")[0]
+    var nav = document.getElementsByClassName("nav-content")[0]
+    
+    if (ham.classList.contains("closed")) {
+        ham.classList.remove("closed");
+        ham.classList.add("open");
+        nav.style.top = "0px";
+    } else {
+        ham.classList.remove("open");
+        ham.classList.add("closed");
+        nav.style.top = "-100px";
+    }
+}
 //for (let i = 0; i < maxSlide; i++) {
 //    console.log(slideArray[i]);
 //}

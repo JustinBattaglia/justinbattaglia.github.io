@@ -17,24 +17,30 @@
             <div class="header">
                 <div class="headerText">
                    <h1>Hi,<br/>I'm Justin Battaglia</h1><br/>
-                    <h2>A front-end <span style="border-bottom: 1px solid rgb(54, 158, 180);">web devloper</span>, who wants to make your passion<br><span style="border-bottom: 1px solid rgb(54, 158, 180);">possible.</span></h2>
+                    <h2>A front-end <span style="border-bottom: 1px solid rgb(54, 158, 180);">web developer</span>, who wants to make your passion<br><span style="border-bottom: 1px solid rgb(54, 158, 180);">possible.</span></h2>
                     <br/><br/><br/>
                     <a href="#contact" class="cta-btn-header"><button type="button">Talk to me!</button></a>
                 </div>
                 
 
                 <nav class="navbar">
-                    <div>
-                        <a href="index.html" style="border-bottom: 1px #fff solid;">Home</a>
-                        <a href="#about-me-header-text">About</a>
+                    <div class="nav-content nav-show">
+                        <a href="#my-work">Portfolio</a>
+                        <a href="#about-me">About</a>
                         <a href="#contact">Contact</a>
                     </div>
+                    <label class="hamburger closed" for="check">
+                        <input type="checkbox" id="check" onclick="moveHam()"/> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
                 </nav>
             </div> 
             <div class="section1">
                 <div style="border-bottom: 2px solid #318b9d; width: 75%; position: relative;top:500px; transform: rotate(45deg);z-index: 1;"></div>
                 <div style="border-bottom: 2px solid #318b9d; width: 80%; position: relative;top:300px; right: 0px;transform: rotate(-20deg);z-index: 1;"></div>
-                <h1 id="about-me-header-text">About Me</h1>
+                <h1 id="about-me">About Me</h1>
                 <img style="position: relative;top:85px;left: 73%; z-index: 11;" src="images/circle.png" alt="">
                 <img style="position: relative;top:650px;left: 25%;width: 20%; z-index: 11;" src="images/circle.png" alt="">
                 <div class="section1-main">
@@ -81,14 +87,9 @@
                     </div>
                 </div>
             </div>
-            <div class="section3">
+            <div id="my-work" class="section3">
                 <div id="slant2"></div>
                 <h1 id="work-header-text">My Work <span id="work-header-text2">:)</span></h1>
-                <div class="lines-row">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
                 <div class="portfolio">
                     <div class="arrowb" >
                         <button onclick="moveb()" id="arrowb">
