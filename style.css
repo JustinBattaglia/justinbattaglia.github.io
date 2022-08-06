@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@media only screen and (min-width: 1800px) {
+    div#slant {
+        height: 405px;
+    }
+}
+
 html {
     overflow-x: hidden;
 }
@@ -213,6 +219,8 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     cursor: pointer;
 }
 .about-me {
+    position: relative;
+    z-index: 2;
     width: 100vw;
     height: 130vh;  
 }
@@ -302,7 +310,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     align-items: center;
     height: 225px;
 }
-.about-me-header h1 {
+.header-indent h1 {
     font-family: 'Raleway', sans-serif;
     background-color: #c3c3c3;
     color: transparent;
@@ -320,18 +328,140 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     left: -200px;
     top: -65px;
     width: 130%;
-    height: 150px;
+    height: 225px;
     transform: rotate(5deg);
     background-color: #f7f7f7;
     box-shadow: 0px 13px 12px 0px rgba(0,0,0,0.16);
     -webkit-box-shadow: 0px 13px 12px 0px rgba(0,0,0,0.16);
     -moz-box-shadow: 0px 13px 12px 0px rgba(0,0,0,0.16);
+    z-index: 1;
 /*    border-top: 5px solid #FF8652;*/
 }
 
 .my-skills {
+    display: flex;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+     
+}
+.my-skills-header {
+    display: flex;
     height: 100vh;
-    widows: 100vw;
+    width: 100%;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    right: 0;
+    overflow: hidden
+}
+
+
+.my-skills-header .right .sub-head {
+    color:#a1a1a1;
+    font-weight: 400;
+    font-family: monospace;
+    width: 75%;
+    margin-top: 75px;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.my-skills-header .right .sub-head p {
+    font-size: 1.6em;
+}
+
+.sub-head code {
+    font-size: 1.6em;
+}
+
+
+
+.my-skills .right {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.my-skills .left {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: #333333;
+}
+
+.left {
+    max-height: 100vh;
+}
+
+.left .scroll {
+    width: 100%;
+    height: auto;
+}
+
+.left-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left h1 {
+    color: #f2f2f2;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    filter: drop-shadow(rgba(0, 0, 0, 1) 0px 2px 4px);
+}
+
+.left .text-header {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 3px;
+    width: 50%;
+    
+}
+
+.left p {
+    padding: 10px;
+    line-height: 30px;
+    color: #f2f2f2;
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.left p.text {
+    padding: 50px 50px 0px 50px;
+    text-align: left;
+}
+
+.left p.text a{
+    color: #fff;
+    text-decoration: underline;
+}
+.left p.text a:hover{
+    cursor: pointer;
+}
+
+.red {
+    color: #E2777A;
+}
+
+.green {
+    color: #7EC699;
 }
 
 #slant2 {
@@ -357,9 +487,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     background-clip: text;
     font-size: 5.5em;
     text-align: center;
+    margin-bottom: 100px;
 }
 #work-header-text2 {
-    background-color: #ff8652;
+    background-color: lightblue;
     color: transparent;
     text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
     -webkit-background-clip: text;
@@ -371,71 +502,24 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background: linear-gradient(#f7f7f7, #318b9d, #ff8652);
-    padding-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#f7f7f7, #318b9d);
 }
 
 .portfolio a {
-    width: 800px;
+    display: flex;
+    margin-bottom: 100px;
+    width: 47%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.54);
+    border-radius: 20px;
 }
 
-.portfolio .arrow {
-    align-self: center;
-}
-
-div.arrow:hover > #arrowf{
-    cursor: pointer;
-    color: #318b9d;
-    background-color: rgba(255,255,255,.5);
-}
-
-#arrowf {
-    width: 100px;
-    height: 100px;
-    outline: none;
+.portfolio h2 {
     background-color: transparent;
-    border: none;
-    font-size: 4em;
-    margin-left: 35px;
-    color: #fff;
-    border: 3px #fff solid;
-    border-radius: 100px;
-    padding-left: 9px;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.portfolio .arrowb {
-    align-self: center;
-}
-
-div.arrowb:hover > #arrowb{
-    cursor: pointer;
-    color: #318b9d;
-    background-color: rgba(255,255,255,.5);
-}
-
-#arrowb {
-    width: 100px;
-    height: 100px;
-    outline: none;
-    background-color: transparent;
-    border: none;
-    font-size: 4em;
-    color: #fff;
-    border: 3px #fff solid;
-    border-radius: 100px;
-    margin-right: 35px;
-    padding-right: 9px;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-}
-
-.portfolio h2{
-    background-color: none;
     position: absolute;
     bottom: 0%;
     left: 2%;
@@ -448,21 +532,19 @@ div.arrowb:hover > #arrowb{
 
 .portfolio div img{
     width: 100%;
-    height: 400px;
     border-radius: 20px;
 }
 
 .tint {
     position: relative;
-    float: left;
     cursor: pointer;
     background-color: #fff;
     box-shadow: 0px 0px 70px -34px rgba(0,0,0,0.32);
     -webkit-box-shadow: 0px 0px 70px -34px rgba(0,0,0,0.32);
     -moz-box-shadow: 0px 0px 70px -34px rgba(0,0,0,0.32);
     text-align: center;
-    margin: 75px 0px;
     border-radius: 20px;
+    height: 90%;
 }
 
 .tint:before {
@@ -479,7 +561,7 @@ div.arrowb:hover > #arrowb{
 }
 
 .tint:hover:before {
-  background: none;
+  background: transparent;
 }
 
 .tint:hover h2 {
@@ -487,109 +569,15 @@ div.arrowb:hover > #arrowb{
 }
 
 h2:hover .tint:before{
-  background: none;
+  background: transparent;
 }
 
-@-webkit-keyframes rotateClock /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotateClock {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotateClock {
-  -webkit-animation: rotateClock 2s linear infinite;
-  -moz-animation: rotateClock 2s linear infinite;
-  -ms-animation: rotateClock 2s linear infinite;
-  -o-animation: rotateClock 2s linear infinite;
-  animation: rotateClock 2s linear infinite;
-}
-
-@-webkit-keyframes rotateCounter /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-@keyframes rotateCounter {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(-360deg);
-    -moz-transform: rotate(-360deg);
-    -webkit-transform: rotate(-360deg);
-    -o-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-.rotateCounter {
-  -webkit-animation: rotateCounter 2s linear infinite;
-  -moz-animation: rotateCounter 2s linear infinite;
-  -ms-animation: rotateCounter 2s linear infinite;
-  -o-animation: rotateCounter 2s linear infinite;
-  animation: rotateCounter 2s linear infinite;
-}
-
-.lines-row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.lines-row div {
-    width: 38%;
-    height: 20px;
-}
-
-.lines-row div:nth-child(1) {
-    border-bottom: #318b9d 5px solid;
-    align-self: flex-start;
-}
-.lines-row div:nth-child(2) {
-    border-bottom: #ff8652 3px solid;
-    align-self: center;
-}
-.lines-row div:nth-child(3) {
-    border-bottom: #c3c3c3 2px solid;
-    align-self: flex-end;
-}
 
 .footer {
     text-align: center;
     font-size: 2.5em;
     font-family: 'Raleway', sans-serif;
-    background-color: #ff8652;
+    background-color: #10B1C9;
     padding: 100px;
     color: transparent;
     text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
