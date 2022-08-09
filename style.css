@@ -4,11 +4,6 @@
     padding: 0;
 }
 
-@media only screen and (min-width: 1800px) {
-    div#slant {
-        height: 405px;
-    }
-}
 
 html {
     overflow-x: hidden;
@@ -392,7 +387,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
     position: relative;
     width: 50%;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     align-self: flex-end;
@@ -409,11 +404,15 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 }
 
 .left-container {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.75);
 }
 
 .left h1 {
@@ -434,7 +433,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 }
 
 .left p {
-    padding: 10px;
+    padding: 20px;
     line-height: 30px;
     color: #f2f2f2;
     font-size: 1.3em;
@@ -444,7 +443,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 }
 
 .left p.text {
-    padding: 50px 50px 0px 50px;
     text-align: left;
 }
 
@@ -499,7 +497,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 }
 
 .portfolio {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -572,8 +570,8 @@ h2:hover .tint:before{
   background: transparent;
 }
 
-
-.footer {
+footer {
+    width: 100vw;
     text-align: center;
     font-size: 2.5em;
     font-family: 'Raleway', sans-serif;
